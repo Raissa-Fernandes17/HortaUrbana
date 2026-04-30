@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plantio | HortaUrbana</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>🌱 Área de Plantio</h1>
+<p>Controle de alimentos e novos cultivos</p>
+
+<nav>
+<ul>
+<li><a href="index.html">Login</a></li>
+<li><a href="personas.html">Personas</a></li>
+<li><a href="hoje.html">Hoje</a></li>
+<li><a href="plantio.html">Plantio</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section>
+<div class="grid">
+
+<div class="card">
+<h3>🥬 Já Plantados</h3>
+
+<!-- LISTA DINÂMICA -->
+<div id="lista-alimentos">
+<p>• Nenhum alimento cadastrado ainda</p>
+</div>
+
+</div>
+
+<div class="card pronto">
+<h3>📅 Sugestão de Hoje</h3>
+<p>Plantar novas mudas de alface na Horta Central.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="grid">
+
+<div class="card urgente">
+<h3>⚠ Atenção</h3>
+<p>Tomate da Horta Sul precisa de rega às 16h.</p>
+</div>
+
+<div class="card">
+<h3>🌿 Próxima Colheita</h3>
+<p>Os alimentos cadastrados aparecerão automaticamente.</p>
+</div>
+
+<div class="card">
+<h3>📍 Destino Rápido</h3>
+<p>Veja no mapa onde plantar ou colher.</p>
+<a href="mapa.html" class="proximo">Abrir Mapa</a>
+</div>
+
+</div>
+</section>
+
+<!-- FORMULÁRIO FUNCIONANDO -->
+
+<section>
+<div class="card">
+
+<h3>➕ Adicionar Novo Alimento</h3>
+
+<form id="form-alimento">
+
+<label>Nome do alimento</label>
+<input type="text" id="nome" required placeholder="Ex: Beterraba">
+
+<label>Selecionar Horta</label>
+<select id="horta">
+<option>Horta Central</option>
+<option>Horta Sul</option>
+<option>Horta Norte</option>
+</select>
+
+<label>Data de Plantio</label>
+<input type="date" id="data" required>
+
+<label>Horário de Rega</label>
+<input type="time" id="rega" required>
+
+<button type="submit" class="btn-login">Adicionar Alimento</button>
+
+</form>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>🌿 HortaUrbana • Sistema de Hortas Comunitárias</p>
+</footer>
+
+<script src="plantio.js"></script>
+
+</body>
+</html>
