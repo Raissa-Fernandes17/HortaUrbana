@@ -194,6 +194,3 @@ index.html
 
 ---
 
-## 👩‍💻 Autora
-
-**Raissa Fernandes**
