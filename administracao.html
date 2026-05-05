@@ -1,97 +1,132 @@
-<!-- administracao.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Administração | HortaUrbana</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração | HortaUrbana</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<h1>🧑‍💼 Área Administrativa</h1>
-<p>Gestão completa das hortas comunitárias</p>
-
-<nav>
-<ul>
-<li><a href="index.html">Login</a></li>
-<li><a href="mapa.html">Mapa</a></li>
-<li><a href="plantio.html">Plantio</a></li>
-<li><a href="personas.html">Personas</a></li>
-</ul>
-</nav>
+    <h1>🧑‍💼 Área Administrativa</h1>
+    <p>Gestão completa das hortas comunitárias</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="plantio.html">Plantio</a></li>
+            <li><a href="personas.html">Personas</a></li>
+            <li><a href="hoje.html">Hoje</a></li>
+        </ul>
+    </nav>
 </header>
 
-<main>
+<main class="tela-adm">
+    <!-- PRIMEIRA LINHA: PERFIL E PRODUÇÃO -->
+    <section class="grid">
+        <div class="card persona-card">
+            <div class="perfil-topo">
+                <img src="img/carla.jpg" alt="Carla Souza" class="foto-persona">
+                <h3>Carla, 35 anos</h3>
+            </div>
+            <div class="perfil-info">
+                <span class="tag-perfil admin">Coordenadora ONG</span>
+                <p>Gestão de 3 unidades e 12 voluntários ativos.</p>
+                <p>Foco: Segurança alimentar e expansão.</p>
+            </div>
+        </div>
 
-<section>
+        <div class="card pronto">
+            <h3>🌿 Hortas Ativas</h3>
+            <div class="conteudo-central">
+                <p>• <b>Norte:</b> João Silva (90% ocupada)</p>
+                <p>• <b>Central:</b> Carla Souza (60% ocupada)</p>
+                <p>• <b>Sul:</b> Marcos Lima (45% ocupada)</p>
+                <hr style="border: 0.5px solid rgba(255,255,255,0.3); margin: 10px 0;">
+                <p>🏢 Parceiro: Escola Municipal Verde</p>
+                <p id="contador-hortas">Total: 3 unidades ativas</p>
+            </div>
+        </div>
 
-<div class="grid">
+        <div class="card">
+            <h3>🥬 Produção Atual</h3>
+            <div id="lista-admin-alimentos">
+                <p>• <b>Beterraba:</b> 20m² (Colheita em 12 dias)</p>
+                <p>• <b>Alface:</b> 15m² (Colheita em 5 dias)</p>
+                <p>• <b>Tomate:</b> 30m² (Colheita em 40 dias)</p>
+                <hr style="border: 0.5px solid #eee; margin: 10px 0;">
+                <p style="color: #2e7d32;">✅ Meta Mensal: 85% atingida</p>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-<h3>👩 Carla</h3>
-<p>35 anos, coordenadora da ONG VerdeCidade.</p>
-<p>Responsável pela organização geral do sistema.</p>
-<p>Administra equipes, alimentos e tarefas.</p>
-<p>Precisa de informações rápidas e claras.</p>
-</div>
+    <!-- SEGUNDA LINHA: FINANÇAS E IMPACTO (NOVO) -->
+    <section class="grid" style="margin-top: 20px;">
+        <div class="card">
+            <h3>💰 Financeiro / Doações</h3>
+            <div class="conteudo-central">
+                <p>• <b>Entradas:</b> R$ 1.250,00 (Abril)</p>
+                <p>• <b>Gastos:</b> R$ 450,00 (Insumos)</p>
+                <p>• <b>Saldo:</b> <span style="color: green; font-weight: bold;">R$ 800,00</span></p>
+                <p>🎁 Última Doação: Supermercado Silva</p>
+            </div>
+        </div>
 
-<div class="card pronto">
-<h3>🌿 Hortas Ativas</h3>
-<p>• Horta Norte</p>
-<p>• Horta Central</p>
-<p>• Horta Sul</p>
-<p>Total: 3 hortas em funcionamento.</p>
-</div>
+        <div class="card">
+            <h3>🧪 Qualidade do Solo</h3>
+            <div class="conteudo-central">
+                <p>• <b>Horta Norte:</b> Nitrogênio OK</p>
+                <p>• <b>Horta Central:</b> pH ideal (6.5)</p>
+                <p>• <b>Horta Sul:</b> Precisa de adubação</p>
+                <p>📅 Próxima Análise: 20/05</p>
+            </div>
+        </div>
 
-<div class="card">
-<h3>🥬 Alimentos Cadastrados</h3>
-<p>• Alface</p>
-<p>• Tomate</p>
-<p>• Cenoura</p>
-<p>• Couve</p>
-<p>• Cebolinha</p>
-</div>
+        <div class="card">
+            <h3>📈 Impacto Social</h3>
+            <div class="conteudo-central">
+                <p>• <b>Famílias atendidas:</b> 45</p>
+                <p>• <b>Alimento doado:</b> 120kg/mês</p>
+                <p>• <b>Voluntários:</b> 15 ativos</p>
+                <p>🌟 Nível de Engajamento: Alto</p>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- TERCEIRA LINHA: PENDÊNCIAS E CONTROLE -->
+    <section class="grid" style="margin-top: 20px;">
+        <div class="card urgente">
+            <h3>⚠ Alertas Críticos</h3>
+            <p>• Rega: Horta Sul às 16h</p>
+            <p>• Estoque: Sementes de Cenoura (Zero)</p>
+            <p>• Praga detectada: Horta Norte (Pulgão)</p>
+        </div>
 
-</section>
+        <div class="card">
+            <h3>📅 Agenda da Semana</h3>
+            <p>✅ <b>Seg:</b> Reunião com parceiros</p>
+            <p>✅ <b>Qua:</b> Treinamento de rega</p>
+            <p>✅ <b>Sex:</b> Entrega de cestas</p>
+            <p>✅ <b>Sáb:</b> Mutirão Central</p>
+        </div>
 
-<section>
-
-<div class="grid">
-
-<div class="card urgente">
-<h3>⚠ Pendências</h3>
-<p>Horta Sul precisa de rega às 16h.</p>
-<p>Revisar estoque de sementes.</p>
-</div>
-
-<div class="card">
-<h3>📅 Tarefas da Carla</h3>
-<p>• Organizar voluntários</p>
-<p>• Aprovar novos plantios</p>
-<p>• Atualizar cronograma</p>
-<p>• Verificar colheitas</p>
-</div>
-
-<div class="card">
-<h3>📊 Controle Geral</h3>
-<p>Todos os alimentos e hortas são acompanhados por esta área.</p>
-<a href="mapa.html" class="proximo">Ver Mapa</a>
-<a href="plantio.html" class="proximo">Ver Plantio</a>
-</div>
-
-</div>
-
-</section>
-
+        <div class="card">
+            <h3>📊 Acesso Rápido</h3>
+            <p>Gerencie os setores abaixo:</p>
+            <div class="botoes-coluna" style="display: flex; gap: 8px; flex-direction: column; margin-top: 15px;">
+                <a href="mapa.html" class="proximo">🗺️ Abrir Mapa</a>
+                <a href="plantio.html" class="proximo">🌱 Novo Plantio</a>
+                <a href="personas.html" class="proximo">👥 Ver Equipe</a>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>
-<p>🌿 HortaUrbana • Área Administrativa</p>
+    <p>🌿 HortaUrbana • Gerenciamento Centralizado</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

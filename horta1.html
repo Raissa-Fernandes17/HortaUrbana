@@ -1,71 +1,92 @@
-<!-- horta1.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horta Norte</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Norte | Detalhes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<h1>🌿 Horta Norte</h1>
-<p>Tarefas do dia</p>
-
-<nav>
-<ul>
-<li><a href="index.html">Login</a></li>
-<li><a href="personas.html">Personas</a></li>
-<li><a href="plantio.html">Plantio</a></li>
-<li><a href="hoje.html">Hoje</a></li>
-</ul>
-</nav>
+    <h1>🌿 Horta Norte</h1>
+    <p>Painel de Controle e Tarefas</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="plantio.html">Plantio</a></li>
+            <li><a href="personas.html">Personas</a></li>
+            <li><a href="hoje.html">Hoje</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
+    <section class="grid">
+        <!-- Card Regar (Urgente) -->
+        <div class="card horta-card urgente">
+            <span class="icone-tarefa">💧</span>
+            <div class="info-tarefa">
+                <h3>Regar</h3>
+                <p>Canteiro 2 às 08:00</p>
+            </div>
+        </div>
 
-<section class="grid">
+        <!-- Card Colher (Pronto) -->
+        <div class="card horta-card pronto">
+            <span class="icone-tarefa">🥬</span>
+            <div class="info-tarefa">
+                <h3>Colher</h3>
+                <p>Alface pronta hoje</p>
+            </div>
+        </div>
 
-<div class="card urgente">
-<h3>💧 Regar</h3>
-<p>Canteiro 2 às 08:00</p>
-</div>
+        <!-- Card Plantar -->
+        <div class="card horta-card">
+            <span class="icone-tarefa">🌱</span>
+            <div class="info-tarefa">
+                <h3>Plantar</h3>
+                <p>Tomate no setor B</p>
+            </div>
+        </div>
 
-<div class="card pronto">
-<h3>🥬 Colher</h3>
-<p>Alface pronta hoje</p>
-</div>
+        <!-- Card Próxima Rega -->
+        <div class="card horta-card">
+            <span class="icone-tarefa">📅</span>
+            <div class="info-tarefa">
+                <h3>Próxima Rega</h3>
+                <p>18:00 horas</p>
+            </div>
+        </div>
 
-<div class="card">
-<h3>🌱 Plantar</h3>
-<p>Tomate no setor B</p>
-</div>
+        <!-- Card Responsável (Estilo Persona) -->
+        <div class="card horta-card responsavel-card">
+            <img src="img/images.jpg" alt="João Silva" class="foto-mini-responsavel">
+            <div class="info-tarefa">
+                <h3>João Silva</h3>
+                <p>Responsável</p>
+            </div>
+        </div>
 
-<div class="card">
-<h3>📅 Próxima Rega</h3>
-<p>18:00 horas</p>
-</div>
+        <!-- Card Status -->
+        <div class="card horta-card">
+            <span class="icone-tarefa">📍</span>
+            <div class="info-tarefa">
+                <h3>Status</h3>
+                <p>Normal</p>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-<h3>👤 Responsável</h3>
-<p>João Silva</p>
-</div>
-
-<div class="card">
-<h3>📍 Status</h3>
-<p>Funcionando normalmente</p>
-</div>
-
-</section>
-
-<a href="mapa.html" class="voltar">⬅ Voltar ao mapa</a>
-<a href="horta2.html" class="proximo">➡ Próxima horta</a>
-
+    <div class="botoes-navegacao">
+        <a href="mapa.html" class="btn-voltar">⬅ Voltar ao mapa</a>
+        <a href="horta2.html" class="btn-proximo">Próxima horta ➡</a>
+    </div>
 </main>
 
 <footer>
-<p>🌿 HortaUrbana</p>
+    <p>🌿 HortaUrbana • Sistema de Gestão</p>
 </footer>
 
 </body>
